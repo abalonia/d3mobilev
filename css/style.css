@@ -1,0 +1,38 @@
+html {
+  font: 10px sans-serif;
+}
+
+
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  stroke: #1564b0;
+  stroke-width: 1.5px;
+}
+
+.link {
+  fill: none;
+  stroke: lightgray;
+  stroke-width: 1.5px;
+}
+
+
+    @-webkit-keyframes pulse 
+    {       
+      0% {-webkit-transform: scale(0.5); opacity: .8;}
+      100% {-webkit-transform: scale(2); opacity: 0;}
+    }
+    
+    .pulse
+    {
+      /* Giving Animation Function */
+      -webkit-animation: pulse 2s linear infinite;
+    }
+    
+    .shadow {
+    -webkit-filter: drop-shadow( 0px 0px 5px black );
+            filter: drop-shadow( 0px 0px 5px #000 ); /* Same syntax as box-shadow */
+}
